@@ -40,12 +40,10 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <head>
-        <style dangerouslySetInnerHTML={{ __html: cssVars }} />
-      </head>
       <body
         className={`${body.variable} ${display.variable} ${body.className} bg-background text-white`}
       >
+        <style dangerouslySetInnerHTML={{ __html: cssVars }} />
         <ThemeProvider
           attribute="class"
           enableSystem={false}

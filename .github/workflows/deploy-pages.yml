@@ -41,6 +41,9 @@ jobs:
       - name: Build static site
         env:
           GITHUB_PAGES: "true"
+          # Must be a real env var. next.config `env` is not inlined into
+          # client bundles, so image paths were emitted as /images/... and 404'd.
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: pnpm exec next build
 
       - name: Upload artifact
