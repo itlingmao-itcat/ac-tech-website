@@ -3,6 +3,7 @@ import Image from "next/image";
 import { timelineData } from "@/app/api/data";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { asset } from "@/lib/asset";
 
 const TimeLine = () => {
   const ref = useRef(null);
@@ -34,7 +35,7 @@ const TimeLine = () => {
             <div className="md:block hidden relative">
               <div>
                 <Image
-                  src="/images/timeline/img-timeline.png"
+                  src={asset("/images/timeline/img-timeline.png")}
                   alt="delivery process"
                   width={1220}
                   height={1000}
@@ -50,7 +51,7 @@ const TimeLine = () => {
                 </div>
                 <div className="bg-primary/15 backdrop-blur-xs px-6 py-2 h-fit rounded-full">
                   <Image
-                    src="/images/solution/solution-icon-1.svg"
+                    src={asset("/images/solution/solution-icon-1.svg")}
                     alt="Discover"
                     width={44}
                     height={44}
@@ -61,7 +62,7 @@ const TimeLine = () => {
               <div className="absolute lg:top-40 top-36 lg:right-0 -right-20 w-72 flex items-center gap-6">
                 <div className="bg-primary/15 backdrop-blur-xs p-6 h-fit rounded-full">
                   <Image
-                    src="/images/solution/solution-icon-2.svg"
+                    src={asset("/images/solution/solution-icon-2.svg")}
                     alt="Design"
                     width={44}
                     height={44}
@@ -83,7 +84,7 @@ const TimeLine = () => {
                 </div>
                 <div className="bg-primary/15 backdrop-blur-xs px-6 py-2 h-fit rounded-full">
                   <Image
-                    src="/images/solution/solution-icon-3.svg"
+                    src={asset("/images/solution/solution-icon-3.svg")}
                     alt="Build"
                     width={44}
                     height={44}
@@ -94,7 +95,7 @@ const TimeLine = () => {
               <div className="absolute lg:bottom-48 bottom-36 lg:right-0 -right-20 w-72 flex items-center gap-6">
                 <div className="bg-primary/15 backdrop-blur-xs px-6 py-2 h-fit rounded-full">
                   <Image
-                    src="/images/solution/solution-icon-4.svg"
+                    src={asset("/images/solution/solution-icon-4.svg")}
                     alt="Scale"
                     width={44}
                     height={44}

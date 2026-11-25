@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { asset } from "@/lib/asset";
 
 const Work = () => {
   const ref = useRef(null);
@@ -21,15 +22,15 @@ const Work = () => {
 
   const services = [
     {
-      icon: "/images/chooseus/chooseus-icon-1.svg",
+      icon: asset("/images/chooseus/chooseus-icon-1.svg"),
       text: "AI systems designed for real business workflows",
     },
     {
-      icon: "/images/chooseus/chooseus-icon-2.svg",
+      icon: asset("/images/chooseus/chooseus-icon-2.svg"),
       text: "Secure digital products with clear governance",
     },
     {
-      icon: "/images/chooseus/chooseus-icon-3.svg",
+      icon: asset("/images/chooseus/chooseus-icon-3.svg"),
       text: "Partner-ready delivery from idea to launch",
     },
   ];
@@ -66,7 +67,7 @@ const Work = () => {
           <motion.div {...TopAnimation} className="lg:col-span-5 col-span-12">
             <div className="2xl:-mr-40 mt-9 flex justify-center">
               <Image
-                src="/images/work/img-work-with-us.png"
+                src={asset("/images/work/img-work-with-us.png")}
                 alt="AC TECH.AI product experience"
                 width={600}
                 height={425}

@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 export const footerlabels: { label: string; herf: string }[] = [
   { label: "Privacy", herf: "#faq" },
   { label: "Governance", herf: "#governance" },
@@ -19,7 +20,7 @@ export const pricedata: {
   {
     title: "AI Systems",
     short: "Core",
-    icon: "/images/portfolio/portfolio-icon-1.svg",
+    icon: asset("/images/portfolio/portfolio-icon-1.svg"),
     background: "bg-chart-5/20",
     price: "Intelligent",
     mark: "Product stack",
@@ -30,7 +31,7 @@ export const pricedata: {
   {
     title: "Automation",
     short: "Ops",
-    icon: "/images/portfolio/portfolio-icon-2.svg",
+    icon: asset("/images/portfolio/portfolio-icon-2.svg"),
     background: "bg-secondary/15",
     price: "Reliable",
     mark: "Workflow layer",
@@ -41,7 +42,7 @@ export const pricedata: {
   {
     title: "Digital Assets",
     short: "Web3",
-    icon: "/images/icons/icon-bitcoin-circle.svg",
+    icon: asset("/images/icons/icon-bitcoin-circle.svg"),
     background: "bg-chart-5/20",
     price: "Secure",
     mark: "Infrastructure",
@@ -52,7 +53,7 @@ export const pricedata: {
   {
     title: "Analytics",
     short: "Insight",
-    icon: "/images/portfolio/portfolio-icon-3.svg",
+    icon: asset("/images/portfolio/portfolio-icon-3.svg"),
     background: "bg-secondary/15",
     price: "Actionable",
     mark: "Decision support",
@@ -63,7 +64,7 @@ export const pricedata: {
   {
     title: "Compliance",
     short: "Trust",
-    icon: "/images/perks/peak-icon-1.svg",
+    icon: asset("/images/perks/peak-icon-1.svg"),
     background: "bg-secondary/15",
     price: "Colorado",
     mark: "US entity",
@@ -74,7 +75,7 @@ export const pricedata: {
   {
     title: "Partnerships",
     short: "Growth",
-    icon: "/images/perks/peak-icon-2.svg",
+    icon: asset("/images/perks/peak-icon-2.svg"),
     background: "bg-secondary/15",
     price: "Global",
     mark: "Ready to scale",
@@ -86,15 +87,15 @@ export const pricedata: {
 
 export const portfolioData: { image: string; title: string }[] = [
   {
-    image: "/images/portfolio/portfolio-icon-1.svg",
+    image: asset("/images/portfolio/portfolio-icon-1.svg"),
     title: "AI product engineering",
   },
   {
-    image: "/images/portfolio/portfolio-icon-2.svg",
+    image: asset("/images/portfolio/portfolio-icon-2.svg"),
     title: "Secure digital infrastructure",
   },
   {
-    image: "/images/portfolio/portfolio-icon-3.svg",
+    image: asset("/images/portfolio/portfolio-icon-3.svg"),
     title: "Enterprise-ready delivery",
   },
 ];
@@ -117,19 +118,19 @@ export const perksData: {
   space: string;
 }[] = [
   {
-    icon: "/images/perks/peak-icon-1.svg",
+    icon: asset("/images/perks/peak-icon-1.svg"),
     title: "Dedicated Support",
     text: "Work with a focused team that responds quickly and clearly.",
     space: "lg:mt-8",
   },
   {
-    icon: "/images/perks/peak-icon-2.svg",
+    icon: asset("/images/perks/peak-icon-2.svg"),
     title: "Partner Network",
     text: "Collaborate across technology, product, and go-to-market teams.",
     space: "lg:mt-14",
   },
   {
-    icon: "/images/perks/peak-icon-3.svg",
+    icon: asset("/images/perks/peak-icon-3.svg"),
     title: "Knowledge Hub",
     text: "Learn how we design, ship, and operate intelligent systems.",
     space: "lg:mt-4",
@@ -143,25 +144,25 @@ export const timelineData: {
   position: string;
 }[] = [
   {
-    icon: "/images/timeline/icon-planning.svg",
+    icon: asset("/images/timeline/icon-planning.svg"),
     title: "Discover",
     text: "Define goals, constraints, and success metrics together",
     position: "md:top-0 md:left-0",
   },
   {
-    icon: "/images/timeline/icon-refinement.svg",
+    icon: asset("/images/timeline/icon-refinement.svg"),
     title: "Design",
     text: "Shape the product architecture and experience",
     position: "md:top-0 md:right-0",
   },
   {
-    icon: "/images/timeline/icon-prototype.svg",
+    icon: asset("/images/timeline/icon-prototype.svg"),
     title: "Build",
     text: "Ship working systems with measurable outcomes",
     position: "md:bottom-0 md:left-0",
   },
   {
-    icon: "/images/timeline/icon-support.svg",
+    icon: asset("/images/timeline/icon-support.svg"),
     title: "Scale",
     text: "Operate, improve, and grow with ongoing support",
     position: "md:bottom-0 md:right-0",

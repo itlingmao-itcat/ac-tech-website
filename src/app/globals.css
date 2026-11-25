@@ -38,6 +38,7 @@
   --z-index-2: 2;
   --z-index-999: 999;
 
+  /* Overridden at runtime in layout.tsx for GitHub Pages basePath */
   --background-image-start: url('/images/work/bg-start.svg');
   --background-image-perk: url('/images/perks/perk-bg.png');
 

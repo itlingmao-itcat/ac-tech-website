@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { portfolioData } from "@/app/api/data";
 import { motion } from "framer-motion";
+import { asset } from "@/lib/asset";
 
 const Portfolio = () => {
   return (
@@ -15,7 +16,7 @@ const Portfolio = () => {
             className="lg:-ml-32"
           >
             <Image
-              src="/images/portfolio/img-portfolio.png"
+              src={asset("/images/portfolio/img-portfolio.png")}
               alt="AC TECH.AI services"
               width={780}
               height={700}

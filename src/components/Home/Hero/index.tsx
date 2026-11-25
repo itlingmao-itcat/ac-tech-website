@@ -6,6 +6,7 @@ import CardSlider from "./slider";
 import BrandLogo from "../BrandLogo";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/asset";
 
 const Hero = () => {
   const leftAnimation = {
@@ -62,7 +63,7 @@ const Hero = () => {
               >
                 Explore capabilities
                 <Image
-                  src={"/images/icons/icon-arrow.svg"}
+                  src={asset("/images/icons/icon-arrow.svg")}
                   alt="arrow-icon"
                   width={20}
                   height={20}
@@ -81,7 +82,7 @@ const Hero = () => {
           <motion.div {...rightAnimation} className="justify-self-center">
             <div className="w-full h-full">
               <Image
-                src="/images/hero/hero-banner-img.png"
+                src={asset("/images/hero/hero-banner-img.png")}
                 alt="AC TECH.AI platform visual"
                 width={584}
                 height={582}

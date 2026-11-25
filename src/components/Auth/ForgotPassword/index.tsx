@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/asset";
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
@@ -59,14 +60,14 @@ const ForgotPassword = () => {
               <div className="mb-10 text-center">
                 <Link href="/" className="mx-auto inline-block max-w-[160px]">
                   <Image
-                    src="/images/logo/logo.svg"
+                    src={asset("/images/logo/logo.svg")}
                     alt="logo"
                     width={140}
                     height={30}
                     className="dark:hidden"
                   />
                   <Image
-                    src="/images/logo/logo-white.svg"
+                    src={asset("/images/logo/logo-white.svg")}
                     alt="logo"
                     width={140}
                     height={30}

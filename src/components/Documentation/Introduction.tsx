@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import { useState } from 'react'
 import { DocNavigation } from './DocNavigation'
+import { asset } from "@/lib/asset";
 
 export const Introduction = () => {
   const [docNavbarOpen, setDocNavbarOpen] = useState(false)
@@ -10,31 +11,31 @@ export const Introduction = () => {
     {
       id: '1',
       packageName: 'NextJs',
-      img: '/images/documentation/Categories=Nextjs.svg',
+      img: asset('/images/documentation/Categories=Nextjs.svg'),
       version: '16.1.6',
     },
     {
       id: '2',
       packageName: 'React',
-      img: '/images/documentation/Categories=React.svg',
+      img: asset('/images/documentation/Categories=React.svg'),
       version: '19.2.3',
     },
     {
       id: '3',
       packageName: 'Tailwindcss',
-      img: '/images/documentation/Categories=Tailwind.svg',
+      img: asset('/images/documentation/Categories=Tailwind.svg'),
       version: '4+',
     },
     {
       id: '4',
       packageName: 'NextAuth',
-      img: '/images/documentation/nextauth.png',
+      img: asset('/images/documentation/nextauth.png'),
       version: '4.24.11',
     },
     {
       id: '5',
       packageName: 'Typescript',
-      img: '/images/documentation/Categories=Typescript.svg',
+      img: asset('/images/documentation/Categories=Typescript.svg'),
       version: '5+',
     },
   ]

@@ -1,6 +1,7 @@
 import { upgradeData } from "@/app/api/data";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import { asset } from "@/lib/asset";
 
 const Upgrade = () => {
   return (
@@ -39,7 +40,7 @@ const Upgrade = () => {
           <div>
             <div className="ml-0 lg:ml-7 justify-self-center">
               <Image
-                src="/images/upgrade/img-upgrade.png"
+                src={asset("/images/upgrade/img-upgrade.png")}
                 alt="AC TECH.AI advantages"
                 width={625}
                 height={580}

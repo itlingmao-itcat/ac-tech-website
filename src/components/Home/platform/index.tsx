@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { asset } from "@/lib/asset";
 
 const Platform = () => {
   return (
@@ -26,7 +27,7 @@ const Platform = () => {
               >
                 Company FAQ
                 <Image
-                  src={"/images/icons/icon-arrow.svg"}
+                  src={asset("/images/icons/icon-arrow.svg")}
                   alt="icon"
                   width={20}
                   height={20}

@@ -1,43 +1,57 @@
-import { Space_Grotesk, DM_Sans } from 'next/font/google'
-import './globals.css'
-import Header from '@/components/Layout/Header'
-import Footer from '@/components/Layout/Footer'
-import { ThemeProvider } from 'next-themes'
-import ScrollToTop from '@/components/ScrollToTop'
-import Aoscompo from '@/utils/aos'
-import type { Metadata } from 'next'
+import { Space_Grotesk, DM_Sans } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
+import { ThemeProvider } from "next-themes";
+import ScrollToTop from "@/components/ScrollToTop";
+import Aoscompo from "@/utils/aos";
+import type { Metadata } from "next";
+import { asset } from "@/lib/asset";
 
 const display = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-display',
-})
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 const body = DM_Sans({
-  subsets: ['latin'],
-  variable: '--font-body',
-})
+  subsets: ["latin"],
+  variable: "--font-body",
+});
 
 export const metadata: Metadata = {
   title: {
-    default: 'AC TECH.AI Ltd',
-    template: '%s | AC TECH.AI',
+    default: "AC TECH.AI Ltd",
+    template: "%s | AC TECH.AI",
   },
   description:
-    'AC TECH.AI Ltd — Colorado AI technology company building intelligent products and digital infrastructure.',
-}
+    "AC TECH.AI Ltd — Colorado AI technology company building intelligent products and digital infrastructure.",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
+  const cssVars = `
+    :root {
+      --background-image-start: url('${asset("/images/work/bg-start.svg")}');
+      --background-image-perk: url('${asset("/images/perks/perk-bg.png")}');
+    }
+  `;
+
   return (
-    <html lang='en' className='dark' suppressHydrationWarning>
-      <body className={`${body.variable} ${display.variable} ${body.className} bg-background text-white`}>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: cssVars }} />
+      </head>
+      <body
+        className={`${body.variable} ${display.variable} ${body.className} bg-background text-white`}
+      >
         <ThemeProvider
-          attribute='class'
+          attribute="class"
           enableSystem={false}
-          forcedTheme='dark'
-          defaultTheme='dark'>
+          forcedTheme="dark"
+          defaultTheme="dark"
+        >
           <Aoscompo>
             <Header />
             {children}
@@ -47,5 +61,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
