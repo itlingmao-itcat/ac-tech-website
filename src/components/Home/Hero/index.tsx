@@ -7,6 +7,7 @@ import BrandLogo from "../BrandLogo";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { asset } from "@/lib/asset";
+import SimplePanel from "../SimplePanel";
 
 const Hero = () => {
   const leftAnimation = {
@@ -79,18 +80,11 @@ const Hero = () => {
               </Button>
             </div>
           </motion.div>
-          <motion.div {...rightAnimation} className="justify-self-center">
-            <div className="w-full h-full">
-              <Image
-                src={asset("/images/hero/hero-banner-img.png")}
-                alt="AC TECH.AI platform visual"
-                width={584}
-                height={582}
-                className="h-auto w-full object-contain"
-                priority
-                unoptimized
-              />
-            </div>
+          <motion.div
+            {...rightAnimation}
+            className="flex justify-center lg:justify-end"
+          >
+            <SimplePanel variant="hero" />
           </motion.div>
         </div>
         <BrandLogo />

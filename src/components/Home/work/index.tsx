@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { asset } from "@/lib/asset";
+import SimplePanel from "../SimplePanel";
 
 const Work = () => {
   const ref = useRef(null);
@@ -64,17 +65,11 @@ const Work = () => {
               ))}
             </div>
           </motion.div>
-          <motion.div {...TopAnimation} className="lg:col-span-5 col-span-12">
-            <div className="2xl:-mr-40 mt-9 flex justify-center">
-              <Image
-                src={asset("/images/work/img-work-with-us.png")}
-                alt="AC TECH.AI product experience"
-                width={600}
-                height={425}
-                className="lg:w-full h-auto object-contain"
-                unoptimized
-              />
-            </div>
+          <motion.div
+            {...TopAnimation}
+            className="lg:col-span-5 col-span-12 mt-9 flex justify-center"
+          >
+            <SimplePanel variant="work" />
           </motion.div>
         </div>
       </div>

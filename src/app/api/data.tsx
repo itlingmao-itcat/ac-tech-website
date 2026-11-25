@@ -40,15 +40,15 @@ export const pricedata: {
     padding: "px-4 py-3",
   },
   {
-    title: "Digital Assets",
-    short: "Web3",
-    icon: asset("/images/icons/icon-bitcoin-circle.svg"),
+    title: "Software",
+    short: "Apps",
+    icon: asset("/images/icons/icon-Services.svg"),
     background: "bg-chart-5/20",
-    price: "Secure",
-    mark: "Infrastructure",
-    width: 46,
-    height: 46,
-    padding: "px-0 py-0",
+    price: "Practical",
+    mark: "Business tools",
+    width: 24,
+    height: 24,
+    padding: "px-4 py-3",
   },
   {
     title: "Analytics",
@@ -169,9 +169,3 @@ export const timelineData: {
   },
 ];
 
-export const CryptoData: { name: string; price: number }[] = [
-  { name: "AI Engineering", price: 1 },
-  { name: "Automation", price: 1 },
-  { name: "Digital Assets", price: 1 },
-  { name: "Analytics", price: 1 },
-];

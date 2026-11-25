@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { portfolioData } from "@/app/api/data";
 import { motion } from "framer-motion";
-import { asset } from "@/lib/asset";
+import SimplePanel from "../SimplePanel";
 
 const Portfolio = () => {
   return (
@@ -13,14 +13,9 @@ const Portfolio = () => {
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: "-100%", opacity: 0 }}
             transition={{ duration: 0.6 }}
-            className="lg:-ml-32"
+            className="flex justify-center"
           >
-            <Image
-              src={asset("/images/portfolio/img-portfolio.png")}
-              alt="AC TECH.AI services"
-              width={780}
-              height={700}
-            />
+            <SimplePanel variant="services" />
           </motion.div>
 
           <motion.div

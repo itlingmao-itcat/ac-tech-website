@@ -1,7 +1,6 @@
 import { upgradeData } from "@/app/api/data";
-import Image from "next/image";
 import { Icon } from "@iconify/react";
-import { asset } from "@/lib/asset";
+import SimplePanel from "../SimplePanel";
 
 const Upgrade = () => {
   return (
@@ -37,16 +36,8 @@ const Upgrade = () => {
               ))}
             </div>
           </div>
-          <div>
-            <div className="ml-0 lg:ml-7 justify-self-center">
-              <Image
-                src={asset("/images/upgrade/img-upgrade.png")}
-                alt="AC TECH.AI advantages"
-                width={625}
-                height={580}
-                className="-mr-5"
-              />
-            </div>
+          <div className="flex justify-center">
+            <SimplePanel variant="company" />
           </div>
         </div>
       </div>
